@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes Externas</title>
+  <style>
+    @font-face {
+      font-family: 'horror';
+      src: url('fonts/Ghastly\ Panic.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'wholecar';
+      src:url('fonts/Wholecar_PERSONAL_USE_ONLY.otf') format('opentype');
+    } 
+
+      /* 
+          Tipos de format() 
+          - opentype (otf)
+          - truetype (ttf)     
+          - embedded-opentype
+          - truetype-aat (Apple Advanced Typography)
+          - svg 
+      */
+    
+    body{
+      font-family: 'wholecar';
+
+    }
+    h1{
+      font-family: 'horror';
+      font-size: 7em;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Titulo de nivel 1</h1>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam voluptatibus excepturi reiciendis id assumenda eius, architecto nihil! Cum ducimus provident dignissimos autem nesciunt voluptatem ea animi! Cum ab qui repellat?</p>
+</body>
+</html>

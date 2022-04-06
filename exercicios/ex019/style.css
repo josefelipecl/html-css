@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+para ID usamos: #
+para CLASS usamos: .
+*/
+body {
+  background-color: #a9d0e7;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+h1 {
+color: #476577;
+}
+
+h2 {
+color: #6C9CB8;
+}
+h1#main {
+text-align: center;
+background-color: #3F5B6B;
+color: whitesmoke;
+}
+.basic {
+color: green;
+text-align: left;
+}
+.medio{
+  color: yellow;
+  text-align: center;
+}
+.advanced {
+  color: red;
+  text-align: right;
+}
+.submain {
+  text-align: center;
+  background-color: rgba(0, 255, 255, 0.11);
+}

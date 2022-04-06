@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste em Responsivo</title>
+  <style>
+.slider-container {
+width: 410px;
+height: 273px;
+margin-left: auto;
+margin-right: auto;
+overflow: hidden;
+text-align: center;
+}
+.image-container{
+  width: 1230px;
+  height: 819px;
+  position: relative;
+  transition: left 2s;
+  -webkit-transition: left 2s;
+  -o-transition: left 2s;
+}
+.button-container {
+  top: -20px;
+  position: relative;
+}
+.slider-button{
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+.slider-image{
+  float: left;
+  margin: 0px;
+  padding: 0px;
+}
+#slider-image-1:target ~.image-container{
+  left: 0px;
+}
+#slider-image-2:target ~.image-container{
+  left: -800px;
+}
+#slider-image-3:target ~.image-container{
+  left: -1600px;}
+
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Teste  slider</h1>
+    <div class="slide-container">
+      <span id="slider-image-1"></span>
+      <span id="slider-image-2"></span>
+      <span id="slider-image-3"></span>
+        <div class=image-container>
+              <img src="sun.png" class="slider-image">
+              <img src="risin.png" class="slider-image">
+              <img src="mon.jpg"class="slider-image">
+        </div>
+        <div class="button-container">
+          <a href="#slider-image-1" class="slider-button"></a>
+          <a href="#slider-image-2" class="slider-button"></a>
+          <a href="#slider-image-2" class="slider-button"></a>
+
+        </div>
+    </div>
+  </main>
+</body>
+</html>

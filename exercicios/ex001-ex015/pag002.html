@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina 02</title>
+</head>
+<body>
+  <h1>Bem vindo á Segunda pagina do site</h1>
+  <p>Apartir de agora continuaremos na segunda pagina</p>
+  <p>Para voltar á primeira página clique aqui<a href="index.html" rel="prev"> Página 01</a></p>
+  <h2>Links para Downloads</h2>
+  <ul>
+    <li><a href="../../midias/imagens/paisagem-m.png" download="paisagem-m.png" >Baixar paisagem-m.png</a></li>
+  </ul>
+  <h2>Imagens dinamica</h2>
+  <p>Podemos usar a tag <code>&lt;picture&gt;</code> para criar varias <code>tag &lt;source&gt; </code>gerando uma imagem dinamica que muda de tamanho dependendo do tamanho da tela. exemplo: </p>
+  <picture>
+    <source media="(max-width: 750px)" srcset="../../midias/imagens/foto-p.png" type="image/png">
+      <source media="(max-width: 1050px)" srcset="../../midias/imagens/foto-m.png" type="image/png">
+      <img src="../../midias/imagens/foto-g.png" alt="Imagem Flexível">
+  </picture>
+<h2>Reproduzindo Áudio</h2>
+<p>Vamos reproduzir um audio do computador em HTML 5.</p>
+<audio preload="metadata" controls loop >
+<source src="../../midias/audios/lofi-mp3.mp3" type="audio/mpeg">
+<source src="../../midias/audios/RainSong-mp3.mp3" type="audio/mpeg">
+</audio>
+<h2>Inserindo Vídeos hospedados localmente</h2>
+    <p>este video esta no meu propio servidor (meu pc)</p>
+        <video controls width="1000"  loop>
+            <source src="../../midias/videos/Video.mp4.m4v" type="video/mp4">
+            <source src="../midias/videos/Video.webM.webm" type="video/mp4">
+            <p>seu navegador não tem compatibilidade =( </p>
+        </video>
+<h2>Inserindo videos direto do youtube</h2>
+<iframe width="960" height="545" src="https://www.youtube.com/embed/4xyPjF1h5iU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>

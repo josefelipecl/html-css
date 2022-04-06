@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: dimgray;
+      margin: 0px;
+    }
+    header {
+      width: 600px;
+      background-color: white;
+      padding: 10px;
+      margin: auto;
+      border: 10px solid dimgrey;
+      border-radius: 33px;
+
+    }
+    main {
+      width: 600px;
+      background-color: white;
+      padding: 10px;
+      margin: auto;
+      border: 10px solid dimgrey;
+      border-radius: 33px;
+      
+    }
+    article { 
+      background-color: lightgrey;
+      border-radius: 33px;      
+
+    }
+    article > aside { 
+      background-color: rgb(139, 139, 139);
+      border-radius: 33px;      
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.486);
+    }
+    article > p {
+      padding: 15px;
+      text-align: justify;
+    }
+    aside > p{
+padding: 3px;
+margin-left: 10px;
+    }
+    nav {
+      background-color: grey;
+      padding: 3px;
+      box-shadow: 2px 2px 4px 1px  rgba(0, 0, 0, 0.445);
+      border-radius: 33px;      
+    }
+    nav > a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      margin-right: 80px;
+      margin-left:20px;
+    }
+    nav > a:hover{
+      color: purple;
+      text-decoration: underline;
+    }
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 5px;
+    }
+    footer > p {
+      margin: 0px;
+    }
+  </style>
+</head>
+<body>
+      <header>
+              <h1>Meu Site</h1>
+              <nav>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+                <a href="#">Link</a>
+              </nav>
+      </header>
+      <main>
+              <section>
+                  <article>
+                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus nihil esse accusantium quas repellendus at ex vel iusto eum. Minima incidunt nemo sed aut enim officiis, ipsa vitae rerum accusamus!</p>
+                  <aside>
+                      <p>este artigo foi escrito por jose da silva</p>
+                  </aside>
+                </article>
+              </section>  
+      </main>
+      <footer>
+        <p>Desenvolvido by eu</p>
+      </footer>
+</body>
+</html>
